@@ -1,0 +1,47 @@
+site_name: 开发日志
+site_author: aaaa
+site_description: 站点描述aaaa
+copyright: 版权信息TM
+
+#主题
+theme:
+  name: 'bootstrap386'
+  primary: green
+  palette: 
+  # Palette toggle for light mode
+  - scheme: default
+    toggle:
+      icon: material/toggle-switch
+      name: Switch to dark mode
+
+  # Palette toggle for dark mode
+  - scheme: slate
+    toggle:
+      icon: material/toggle-switch-off-outline
+      name: Switch to light mode
+ 
+#导航
+nav:
+- AloneCoce工作室: index.md
+- 我是干嘛的: index.md
+- 做点游戏:
+  - 开发图片: about.md
+  - 开发计划: about.md
+- 日常生活: about.md
+
+#插件
+plugins:
+    #搜索插件
+    - search:
+        separator: '[\s\-\.]+'
+#本地运行地址
+dev_addr: 127.0.0.1:5500
+#下部
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/dreamskycx/waterbox
+      name: 水箱档案馆开源
+    - icon: fontawesome/brands/qq
+      link: https://jq.qq.com/?_wv=1027&k=WrW83q3O
+      name: 水箱游戏交流群（538229336）
