@@ -1,12 +1,10 @@
-site_name: 微风吹走云
+site_name: 云是随机的
 site_author: aaaa
 site_description: 站点描述aaaa
 copyright: 版权信息TM
 
 #开启按钮图标
-markdown_extensions:
-  - attr_list
-  - md_in_html
+
 #开启图片
 plugins:
   - glightbox
@@ -15,6 +13,13 @@ markdown_extensions:
   - admonition
   - pymdownx.details
   - pymdownx.superfences
+  - attr_list
+  - md_in_html
+  #开启emjoy图标
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+
 #主题
 theme:
   features:
@@ -40,11 +45,11 @@ nav:
 - 做点游戏:
   - DEMO: demo.md
   - 日志: log.md
-- 程序:
-    
+  - 玩: log.md
 - 生活: life.md
-- 随便聊聊: talk.md
-
+- 随便聊聊: 
+  - 书: book.md
+  - 聊聊: talk.md
 #插件
 plugins:
     #搜索插件
@@ -66,8 +71,7 @@ extra:
       name: 水箱游戏交流群（538229336）
 
 
-
-
-
+extra_css:
+  - stylesheets/extra.css
 
       #python -m mkdocs serve
