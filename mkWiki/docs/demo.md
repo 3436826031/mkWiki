@@ -38,6 +38,7 @@
 
 **（未定名） 飞机打怪兽**
 
+
  [![](https://img.shields.io/badge/飞行射击-orange.svg)](http://jimureport.com)
 ??? note "游戏简介"
     临时奇异制作的

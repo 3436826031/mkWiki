@@ -1,13 +1,12 @@
-site_name: 云是随机的
+site_name: 云是随机事件
 site_author: aaaa
-site_description: 站点描述aaaa
-copyright: 版权信息TM
 
 #开启按钮图标
 
 #开启图片
 plugins:
   - glightbox
+  - tags
 #开启告诫
 markdown_extensions:
   - admonition
@@ -19,38 +18,59 @@ markdown_extensions:
   - pymdownx.emoji:
       emoji_index: !!python/name:materialx.emoji.twemoji
       emoji_generator: !!python/name:materialx.emoji.to_svg
-
+  - pymdownx.tabbed:
+      alternate_style: true 
 #主题
 theme:
   features:
+    - navigation.instant
     - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.expand
+    - toc.follow
     - navigation.top
+    - search.highlight
+    - search.share
+    - search.suggest
   language: zh 
   name: 'material'
+  # 启用 拓展的html
+  #custom_dir: overrides
   palette: 
   # Palette toggle for light mode
-  - primary: teal
+  - scheme: orange
     toggle:
-      icon: material/toggle-switch
+      icon: material/brightness-7
       name: Switch to dark mode
   # Palette toggle for dark mode
   - scheme: slate
     toggle:
-      icon: material/toggle-switch-off-outline
+      icon: material/brightness-4
       name: Switch to light mode
- 
+    accent: brown 
+    scheme: default
+    primary: brown
+  logo: icon2.png
+  favicon: icon2.png
 #导航
 nav:
 - Hi！你好: index.md
-- 做点游戏:
+- 游戏&程序:
   - DEMO: demo.md
-  - 日志: log.md
-  - 玩: log.md
-- 生活: life.md
+  - 日志:
+    - 废弃: log.md
+  - 如何去设计一款游戏: log.md
+- 生活碎片: 
+  - 那些山: mountain.md
+  - 生活: life.md
 - 随便聊聊: 
-  - 书: book.md
-  - 聊聊: talk.md
+  - 云: book.md
+  - 雨: book.md
+  - 风: talk.md
+  - 如何折一只兔子: talk.md
 #插件
+
 plugins:
     #搜索插件
     - search:
@@ -69,9 +89,6 @@ extra:
     - icon: fontawesome/brands/qq
       link: https://jq.qq.com/?_wv=1027&k=WrW83q3O
       name: 水箱游戏交流群（538229336）
-
-
 extra_css:
   - stylesheets/extra.css
-
       #python -m mkdocs serve
